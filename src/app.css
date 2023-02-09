@@ -1,0 +1,274 @@
+/* General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+button,
+input{
+border: none;
+outline: none
+}
+
+/* General Styling Ends Here*/
+
+
+/* Root Variables */
+
+:root{
+    --purple: rgb(58, 22, 92);
+}
+
+/* Root Variables Ends Here*/
+
+/* Header Part */
+
+.header-container{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    border-bottom: 2px solid var(--purple);
+}
+
+.header-left{
+    flex: 0.3;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right {
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-right>.search-box{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    background-color: var(--purple);
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.search-input>input[type="text"]{
+    display: flex;
+    width: 340px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.search-icon{
+    margin-top: 4px;
+    font-size: 30px;;
+}
+
+.s-icon{
+    color:white;
+}
+
+.header-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-weight: 600;
+}
+
+.link{
+padding: 6px;
+border-radius: 10px;
+transition: all 0.2s ease-in-out;
+border: 2px solid rgb(0, 0, 0);
+}
+
+.link:hover{
+  border: 2px solid var(--purple);
+  border-radius: 20px;
+  color: white;
+}
+
+.mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: white;
+    border-radius: 2px solid black;
+}
+
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--purple);
+}
+
+.j-icon{
+    font-size: 100px !important;
+}
+
+.header-left>img{
+    height: 50px;
+}
+
+.header-container{
+   background-color: rgba(62, 9, 105, 0.445);
+}
+/* Header Part Ends Here */
+
+/* Home Part */
+
+.home-container{
+    font-weight: 300;
+    display: flex;
+    background: url("./assets/bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    background: rgb(164,115,223);
+background: linear-gradient(93deg, rgba(164,115,223,0.8491771708683473) 0%, rgba(43,0,97,1) 100%);
+}
+
+/* Home Part Ends Here*/
+
+/* .layout{
+    display: flex;
+    flex-direction: column;
+} */
+
+.right{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+.right>title{
+    text-align: center;
+
+}
+
+h1{
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid white;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.left{
+    display: flex;
+    flex: 0.5;
+    border-right: 3px solid white;
+    text-align: justify;
+    flex-direction: column;
+    
+}
+
+.meaning{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.right{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+/* Footer Part */
+
+.footer-container{
+    background-color: rgb(167, 136, 206);
+       width: 100vw;
+       position: absolute;
+       bottom: 0px;
+       height: 40px;
+       text-align:center;
+       line-height: 40px;
+       justify-content: center;
+       border-top: 3px solid var(--purple);
+}
+
+
+/* Footer Part Ends Here*/
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ip-list>li{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ip-list{
+    display: flex;
+    gap: 20px;
+}
+
+.welcome-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    color: white;
+}
